@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="project" ng-init="title='File Analyzer'">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular-resource.min.js">
+    </script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="http://firebase.github.io/angularFire/angularFire.js"></script>
+    <!-- build:css styles/app.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <h2>{{title}}</h2>
+    <div ng-view></div>
+    <script src="scripts/todo.js"></script>
+  </body>
+</html>
